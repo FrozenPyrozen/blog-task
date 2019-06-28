@@ -5,12 +5,7 @@ const AddCommentView = ({ onSubmit, onChange }) => {
     <div>
       AddComment
       <form onSubmit={onSubmit}>
-        <textarea
-          name="text"
-          cols="30"
-          rows="10"
-          onChange={onChange}
-        ></textarea>
+        <textarea name="text" cols="30" rows="10" onChange={onChange} />
         <button type="submit">Add comment</button>
       </form>
     </div>

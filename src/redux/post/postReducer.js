@@ -1,21 +1,12 @@
 import { combineReducers } from 'redux';
 import types from './postActionTypes';
 
-/*y: "lorem fjfjfj slddk sj sjd fkk kfhghgg mgmgngjdjdjd jddj", id: 1, comments: Array(9)}
-author: "Max"
-body: "lorem fjfjfj slddk sj sjd fkk kfhghgg mgmgngjdjdjd jddj"
-comments: (9) [{…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}]
-id: 1
-title: "Hell" */
-
 function postReducer(state = {}, { type, payload }) {
   switch (type) {
     case types.FETCH_SUCCESS:
       return payload;
     case types.ADD_COMMENT_SUCCESS:
-      const { comments } = state;
-
-      return { ...state, comments: [...comments, payload] };
+      return { ...state, comments: [...state.comments, payload] };
 
     default:
       return state;
