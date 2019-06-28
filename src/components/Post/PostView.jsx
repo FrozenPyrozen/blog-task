@@ -1,6 +1,6 @@
 import React from 'react';
 
-import AddCommentContainer from '../AddComment/';
+import AddCommentContainer from "../AddComment";
 
 const PostView = ({ handleGoBack, post }) => {
   const { author, body, comments = [], title } = post;

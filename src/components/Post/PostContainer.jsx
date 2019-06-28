@@ -18,6 +18,7 @@ class PostContainer extends Component {
       pathname: '/posts',
     });
   };
+
   render() {
     return (
       <div>
