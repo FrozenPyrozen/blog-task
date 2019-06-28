@@ -11,6 +11,7 @@ class PostsListContainer extends Component {
     const { fetchAll } = this.props;
     fetchAll();
   }
+
   render() {
     return (
       <div>
