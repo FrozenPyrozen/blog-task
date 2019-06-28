@@ -24,6 +24,7 @@ class PostsListContainer extends Component {
 
 const mapStateToProps = state => ({
   posts: postsSelectors.getItems(state),
+  isLoading: postsSelectors.getIsLoading(state),
 });
 
 const mapDispatchToProps = {

@@ -18,7 +18,6 @@ const addComment = comment => async dispatch => {
 
   try {
     const res = await api.addComment(comment);
-    console.log(res);
 
     dispatch(actions.addCommentSuccess(res));
   } catch (error) {

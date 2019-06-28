@@ -30,6 +30,7 @@ class PostContainer extends Component {
 
 const mapStateToProps = state => ({
   post: postSelectors.getItem(state),
+  isLoading: postSelectors.getIsLoading(state),
 });
 
 const mapDispatchToProps = {

@@ -33,7 +33,6 @@ class AddCommentContainer extends Component {
       body: text.trim(),
       postId,
     };
-    console.log(fetchComment);
 
     fetchComment(comment);
     this.reset();
